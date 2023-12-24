@@ -11,9 +11,9 @@ export default function About() {
                 apps.
               </h1>
               <p className="mb-8 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                Laborum, voluptas natus?
+                Hey! I am Owen Yeo Le Yang, a Y2 NUS College student studying Computer Science! I am a passionate programmer who loves to build amazing apps.
+                I have experience in game design, web development, and mobile development, and is always looking for ways to learn and grow! Outside of work, I love weightlifting,
+                hiking, and running!
               </p>
               <div className="flex justify-center">
                 <a
