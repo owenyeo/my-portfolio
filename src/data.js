@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A game designed by my friend and I for a final project in a Anthropology Course, it is a game that teaches the player about food production in Chiang Mai. It is written in C# and uses Unity for the game engine.",
     image: process.env.PUBLIC_URL + "/project-2.gif",
-    link: "https://reactbootcamp.com",
+    link: "https://play.unity.com/mg/other/releasebuild",
   },
   {
     title: "ChatBot",
@@ -49,6 +49,29 @@ export const testimonials = [
     company: "National University of Singapore",
   },
 ];
+
+export const hobbies = [
+  {
+    title: "Volunteering",
+    description: "As a way of giving back to society, I volunteer regularly. I am currently the President of the Engagement Taskforce of Youth Corps Singapore. We plan events to raise awareness on issues like Toxic Productivity and Trauma!",
+    image: process.env.PUBLIC_URL + "/volunteering.jpg"
+  },
+  {
+    title: "Hiking",
+    description: "Apart from conquering mental challenges, I love a good physical challenge, and what's better than conquering the earth itself? Climbing mountains and being with nature is something I crave all the time!",
+    image: process.env.PUBLIC_URL + "/hiking.jpg"
+  },
+  {
+    title: "Weightlifting",
+    description: "I don't always have access to nature, so Iron will do! I enjoy weightlifting, running, and Muay Thai when I am not one with nature!",
+    image: process.env.PUBLIC_URL + ""
+  },
+  {
+    title: "Photography",
+    description: "It's not much currently, but I am learning how to take better pictures and videos to showcase the beauty I see in these views.",
+    image: process.env.PUBLIC_URL + "/Photography.jpg"
+  }
+]
 
 export const skills = [
   "JavaScript",
