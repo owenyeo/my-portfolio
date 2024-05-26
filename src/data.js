@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "Java-based desktop app",
     description:
       "A timetable manager app designed by my team and I for a Software Engineering Course, I had a big hand in the backend and the overall design of the product. We used JavaFX for the GUI and has a JSON based storage system. We also used the MVC design pattern to keep the code clean and organized.",
-    image: process.env.PUBLIC_URL + "/project-1.gif",
+    image: process.env.PUBLIC_URL + "/TimetaBRO.png",
     link: "https://reactbootcamp.com",
   },
   {
@@ -12,24 +12,8 @@ export const projects = [
     subtitle: "Unity Game",
     description:
       "A game designed by my friend and I for a final project in a Anthropology Course, it is a game that teaches the player about food production in Chiang Mai. It is written in C# and uses Unity for the game engine.",
-    image: process.env.PUBLIC_URL + "/project-2.gif",
+    image: process.env.PUBLIC_URL + "/BestBefore.png",
     link: "https://play.unity.com/mg/other/releasebuild",
-  },
-  {
-    title: "ChatBot",
-    subtitle: "Java-based desktop app",
-    description:
-      "An individual project made for a Software Engineering Course. It is designed to be a personal assistant that keep track of your schedule.",
-    image: process.env.PUBLIC_URL + "/project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Forum",
-    subtitle: "React, Golang, and PostgreSQL",
-    description:
-      "A personal project of mine to learn fullstack development. Employed SWE design patterns like   ",
-    image: process.env.PUBLIC_URL + "/project-4.gif",
-    link: "https://reactbootcamp.com",
   },
 ];
 

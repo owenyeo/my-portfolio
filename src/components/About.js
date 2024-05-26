@@ -1,7 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Projects from "./Projects";
+import Hobbies from "./Hobbies";
+import Skills from "./Skills";
+import Testimonials from "./Testimonials";
+import Contact from "./Contact";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+      <div
+          className={className}
+          style={{ ...style, display: "block", background: "red", zIndex: 20 }}
+          onClick={onClick}
+      />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+      <div
+          className={className}
+          style={{ ...style, display: "block", background: "green", zIndex: 20 }}
+          onClick={onClick}
+      />
+  );
+}
 
 export default function About() {
+  const settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+  };
+
+
     return (
         <section id="about" style={{minHeight:'100vh'}}>
           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
@@ -29,14 +70,23 @@ export default function About() {
                 </Link>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img
-                    className="object-cover object-center rounded"
-                    alt="hero"
-                    src={process.env.PUBLIC_URL + "/display.png"}
-                />
+              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <Slider {...settings}>
+                    <div>
+                        <img
+                            className="object-cover object-center rounded"
+                            alt="hero"
+                            src={process.env.PUBLIC_URL + "/display.png"}
+                        />
+                    </div>
+                </Slider>
             </div>
           </div>
+          <Projects />
+          <Skills />
+          <Hobbies />
+          <Testimonials />
+          <Contact />
         </section>
       );
 }

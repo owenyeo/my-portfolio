@@ -21,11 +21,14 @@ export default function Navbar() {
                     <Link to="/testimonials" className="mr-5 hover:text-white">
                         Testimonials
                     </Link>
+                    <Link to="/hobbies" className="mr-5 hover:text-white">
+                        Hobbies
+                    </Link>
                 </nav>
                 <Link
                     to="/contact"
-                    className="inline-flex items-center bg-green-500 border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0">
-                    Hire Me
+                    className="inline-flex items-center bg-green-500 border-0 py-1 px-3 focus:outline-none hover:bg-green-600 rounded text-base mt-4 md:mt-0 text-white">
+                    Contact Me
                     <ArrowRightIcon className="w-4 h-4 ml-1" />
                 </Link>
             </div>
