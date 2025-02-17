@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Projects from "./Projects";
@@ -57,17 +59,23 @@ export default function About() {
                 I have experience in game design, web development, and machine learning, and is always looking for ways to learn and grow! Outside of work, I love powerlifting,
                 hiking, and running!
               </p>
-              <div className="flex justify-center">
-                <Link
-                  to="/contact"
-                  className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                  Work With Me
-                </Link>
-                <Link
-                  to="/projects"
-                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                  See My Past Work
-                </Link>
+              <div className="flex justify-center space-x-6">
+                <a
+                  href="https://github.com/owenyeo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg">
+                  <FontAwesomeIcon icon={faGithub} className="mr-2" />
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/owen-yeo-a0b45a254/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg">
+                  <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+                  LinkedIn
+                </a>
               </div>
             </div>
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
